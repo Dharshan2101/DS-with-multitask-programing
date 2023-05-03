@@ -1,0 +1,52 @@
+#include<stdio.h>
+
+int main() {
+    int s;
+    printf("Enter number of elements: ");
+    scanf("%d", &s);
+    int a[s];
+    int min, max;
+    
+    for(int i=0; i<s; i++) {
+        printf("Enter number: ");
+        scanf("%d", &a[i]);
+    }
+
+    min = a[0];
+    for(int i=1; i<s; i++) {
+        if(min > a[i]) {
+            min = a[i];
+        }
+    }
+    printf("\nMinimum value: %d\n", min);
+
+    max = a[0];
+    for(int i=1; i<s; i++) {
+        if(max < a[i]) {
+            max = a[i];
+        }
+    }
+    printf("Maximum value: %d\n", max);
+
+    return 0;
+}
+
+
+
+
+OUTPUT
+
+
+
+ Enter number of elements: 4
+Enter number: 23
+Enter number: 34
+Enter number: 56
+Enter number: 78
+
+Minimum value: 23
+Maximum value: 78
+
+--------------------------------
+Process exited after 18.3 seconds with return value 0
+Press any key to continue . . .
