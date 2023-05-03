@@ -1,0 +1,41 @@
+#include<stdio.h>
+
+int main()
+{
+    int arr[100], size, i, sum = 0;
+    
+
+    printf("Enter array size\n");
+    scanf("%d",&size);
+    
+    printf("Enter array elements\n");
+    for(i = 0; i < size; i++)
+          scanf("%d",&arr[i]);
+          
+    for(i = 0; i < size; i++)
+          sum = sum + arr[i]; 
+    
+    
+    printf("Sum of the array = %d\n",sum);
+    
+    return 0;
+}
+
+
+
+
+OUTPUT
+
+Enter array size
+5
+Enter array elements
+12
+23
+45
+56
+77
+Sum of the array = 213
+
+--------------------------------
+Process exited after 13.72 seconds with return value 0
+Press any key to continue . . .
