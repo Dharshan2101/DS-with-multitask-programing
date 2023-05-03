@@ -1,0 +1,42 @@
+#include<stdio.h>
+int main()
+{
+int i, n;
+printf("Enter the value :-  ");
+scanf("%d", &n);
+printf("Printing natural numbers from 1 to %d\n", n);
+i = 1;
+do
+{
+	printf("%d\n", i);
+	i++;
+}
+while(i <= n);
+printf("\n");
+}
+
+OUTPUT
+
+
+Enter the value :-  10
+Printing natural numbers from 1 to 10
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+--------------------------------
+Process exited after 3.085 seconds with return value 0
+Press any key to continue . . .
+
+
+
+
+
