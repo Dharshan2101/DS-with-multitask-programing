@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+	int a,d,sum;
+	printf("enter a number\n");
+	scanf("%d",&a);
+	while(a!=0)
+	{
+		d=a%10;
+		sum=sum+d;
+		a=a/10;
+		
+	}
+	printf("\nsum is %d",sum);
+}
+
+
+
+
+OUTPUT:-
+enter a number
+123456
+
+sum is 21
+--------------------------------
+Process exited after 3.53 seconds with return value 0
