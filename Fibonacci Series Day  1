@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+int first=0, second=1, i, n, sum=0;
+printf("Enter the number of terms: ");
+scanf("%d",&n);
+printf("Fibonacci Series:");
+for(i=0 ; i<n ; i++)
+{
+if(i <= 1)
+{
+sum=i;
+}
+else
+{
+sum=first + second;
+first=second;
+second=sum;
+}
+printf(" %d",sum);
+}
+return 0;
+}
+
+
+
+OUTPUT
+Enter the number of terms: 8
+Fibonacci Series: 0 1 1 2 3 5 8 13
+--------------------------------
+Process exited after 2.687 seconds with return value 0
+Press any key to continue . . .
