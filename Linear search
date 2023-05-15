@@ -1,0 +1,56 @@
+#include <stdio.h>
+int main()
+{
+    int i,a[15],n,x,low,mid,high;
+    printf("The number of elements: ");
+    scanf("%d",&n);
+    printf("Enter the elements in sorted order: ");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("Enter the number to be sorted: ");
+    scanf("%d",&x);
+    low=0;
+    high=n-1;
+    while(low<=high)
+    {
+        mid=(low+high)/2;
+        if (x==a[mid])
+        {
+            printf("Element is found\n");
+            break;
+        }
+        else if (x<a[mid])
+        {
+            high=mid-1;
+        }
+        else
+        {
+            low=mid+1;
+        }
+    }
+    if(low>high)
+    {
+        printf("Element not found\n");
+    }
+    return 0;
+}
+
+
+
+OUTPUT:-The number of elements: 3
+Enter the elements in sorted order: 32
+43
+78
+Enter the number to be sorted: 43
+Element is found
+
+--------------------------------
+Process exited after 9.813 seconds with return value 0
+Press any key to continue . . .
+
+
+
+
+
